@@ -12,6 +12,12 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <springboot.dependencies.version>3.5.4</springboot.dependencies.version>
+        <fastjson.version>2.0.42</fastjson.version>
+        <jjwt.version>0.9.1</jjwt.version>
+        <jaxb.version>2.3.1</jaxb.version>
+        <mybatis.plus.version>3.5.10.1</mybatis.plus.version>
+        <mysql.version>8.0.31</mysql.version>
     </properties>
 
     <dependencyManagement>
@@ -20,7 +26,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>3.5.4</version>
+                <version>${springboot.dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -28,31 +34,31 @@
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
-                <version>2.0.42</version>
+                <version>${fastjson.version}</version>
             </dependency>
             <!-- JWT（JSON Web Token）的库，用于生成和解析JWT -->
             <dependency>
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt</artifactId>
-                <version>0.9.1</version>
+                <version>${jjwt.version}</version>
             </dependency>
             <!-- JAXB API，用于XML和Java对象之间的绑定 -->
             <dependency>
                 <groupId>javax.xml.bind</groupId>
                 <artifactId>jaxb-api</artifactId>
-                <version>2.3.1</version>
+                <version>${jaxb.version}</version>
             </dependency>
             <!-- MyBatis Plus的Spring Boot starter，用于简化MyBatis的使用 -->
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
-                <version>3.5.10.1</version>
+                <version>${mybatis.plus.version}</version>
             </dependency>
             <!-- MySQL连接器，用于连接和操作MySQL数据库 -->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-                <version>8.0.31</version>
+                <version>${mysql.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
